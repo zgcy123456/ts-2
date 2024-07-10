@@ -2,7 +2,7 @@
     /* border: 1px solid black; */
     width: 270px;
     height: 540px;
-    background-color: #ffffff;
+    background-color: #f3f4f6;
     margin: auto auto;
 }
 
@@ -62,4 +62,31 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+}
+
+
+
+.app-con{
+    width: 270px;
+    height: 540px;
+    background-color: #f3f4f6;
+    margin: auto auto;
+    position: relative;
+}
+
+.head-second{
+    width: 270px;
+    height: 77px;
+    background: url(../image/header2.png) no-repeat left top;
+}
+
+
+
+.con-bottom{
+    width: 270px;
+    height: 42px;
+    background: url(../image/bottom2.png) no-repeat left top;
+    position: absolute;
+    bottom: 0;
+
 }
