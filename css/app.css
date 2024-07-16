@@ -46,11 +46,6 @@
     height: 20px;
 }
 
-/* .item-sms-con .item-sms-each .item-sms-des .sms-title .sms-number {
-    width: 70px;
-    height: 100%;
-
-} */
 
 .item-sms-con .item-sms-each .item-sms-des .sms-title .sms-time {
     width: 20px;
@@ -80,6 +75,17 @@
     background: url(../image/header2.png) no-repeat left top;
 }
 
+.phone-number{
+    width: 100px;
+    height: 30px;
+    margin-top: 59px;
+    padding-top: 20px;
+    position: relative;
+    top: 35px;
+    left: 82px;
+
+}
+
 
 
 .con-bottom{
@@ -89,4 +95,15 @@
     position: absolute;
     bottom: 0;
 
+}
+
+.app-con .sms-content{
+    width: 240px;
+    margin-left: 15px;
+    height: 90px;
+    line-height: 22px;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    border-radius: 10px;
+    background: url(../image/con-bg.png) no-repeat left top;
 }
