@@ -37,7 +37,7 @@ import SmsEvent from "./js/SmsEvent"
 
     const smsEvent :SmsEvent = new SmsEvent(smsData, oSmsEach);
 
-    const init=():void =>{
+    const init =():void =>{
         buildEvent();
     }
 
@@ -49,7 +49,7 @@ import SmsEvent from "./js/SmsEvent"
     function handleListClick(e: MouseEvent) : void{
         const tar = e.target as HTMLElement;
         const tagName = tar.tagName.toLowerCase();
-        if(tagName === 'div' || tagName=== 'button'){
+        if(tagName === 'div' || tagName=== 'span'){
             const id = parseInt(tar.dataset.id);
             switch(tagName){
                 case 'div' :
@@ -58,5 +58,7 @@ import SmsEvent from "./js/SmsEvent"
 
         }
     }
+
+    init();
 
 })(document)
