@@ -16,6 +16,17 @@ class SmsDom extends SmsTemplate{
         this.smsWrapper.appendChild(oSmsCon);
     }
 
+    protected initList(smsData : ISmsData[]){
+        if(smsData.length){
+            const oFrag : DocumentFragment = document.createDocumentFragment();
+            smsData.map((todo:ISmsData) => {
+                const oItem : HTMLElement = createItem('div', 'sms-item', this.smsList(todo));
+                oFrag.appendChild(oItem);
+            });
+            this.smsWrapper.appendChild(oFrag);
+        }
+    }
+
 }
 
 export default SmsDom;

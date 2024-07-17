@@ -3,7 +3,7 @@ import SmsEvent from "./js/SmsEvent"
 
 ;((doc) => {
 
-    const oSmsEach : HTMLElement = document.querySelector('.item-sms-each') as HTMLElement;
+    const oSmsEach : HTMLElement = document.querySelector('.sms-list') as HTMLElement;
 
 
     const smsData : ISmsData[] =[
@@ -31,16 +31,19 @@ import SmsEvent from "./js/SmsEvent"
             id:5,
             phoneNumber:'02989580215',
             content:'感谢您致电高新区枫叶惠人社区综合服务站，我们将竭诚为您服务。地址：西安市雁塔区高新区科技六路200号枫林意树2号楼商铺'
+        },
+        {
+            id:6,
+            phoneNumber:'02989580215',
+            content:'感谢您致电高新区枫叶惠人社区综合服务站，我们将竭诚为您服务。地址：西安市雁塔区高新区科技六路200号枫林意树2号楼商铺'
         }
     ];
-
 
     const smsEvent :SmsEvent = new SmsEvent(smsData, oSmsEach);
 
     const init =():void =>{
         buildEvent();
     }
-
 
     function buildEvent():void{
         oSmsEach.addEventListener('click', handleListClick, false);

@@ -8,7 +8,7 @@ class SmsEvent extends SmsDom{
     constructor(smsData : ISmsData[], smsWrapper : HTMLElement){
         super(smsWrapper);
         this.smsData = smsData;
-        
+        this.init();
     }
 
     public showSms(id : number) {
@@ -18,6 +18,10 @@ class SmsEvent extends SmsDom{
             this.showSmsContent(_data);
             return;
         }
+    }
+
+    private init(){
+        this.initList(this.smsData);
     }
 
 
